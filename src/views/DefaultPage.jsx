@@ -8,8 +8,10 @@ import Searchfield from '../components/Searchfield'
 import { useState, useEffect } from 'react'
 
 const events = [
-  {id: 1, title: "Meeting", date: "2026-01-22", description: "About party in Aarhus"},
+  {id: 1, title: "Meeting", date: "2026-01-22", description: "About meeting in Aarhus"},
   {id: 2, title: "Workshop", date: "2026-01-23", description: "Designing a new app"},
+  {id: 3, title: "Party", date: "2026-03-24", description: "About party in Aarhus"},
+  {id: 4, title: "Social event", date: "2026-05-27", description: "PARTY PARTY RAHHH"},
 ]
 
 function DefaultPage() {
@@ -20,6 +22,8 @@ function DefaultPage() {
     const savedFilter = localStorage.getItem("filterTextinStorage");
     return savedFilter ? savedFilter : "";
  });
+
+ 
   // Whenever the value of filterText changes, the useEffect hook is triggered 
   // and the new value of filterText (information) is saved to local storage with the key "filterTextinStorage".
 
